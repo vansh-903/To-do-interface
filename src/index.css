@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo-list-container {
+  display: flex;
 }
+
+.control-panel {
+  width: 250px;
+  border-right: 0px solid #ccc;
+  padding: 20px;
+}
+
+.task-lists {
+  display: flex;
+}
+
+.task-list {
+  margin: 0px 10px 10px 10px; /* Adjust margins for spacing */
+  width: calc(30% - 20px); /* Calculate width based on 3 lists */
+  border: 1px solid #3c0c0c;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.task-list li {
+  border: 2px solid #650c0c; /* Add bottom border for all tasks */
+  margin: 15px; /* Add bottom margin for spacing */
+  padding: 5px; /* Add bottom padding for spacing */
+  border-radius: 5px;
+}
+
+
+.task-list-select,
+.task-input,
+.add-task-button {
+  margin-bottom: 10px;
+}
+
+.task-list-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.task-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.task-list h2 {
+  margin-bottom: 10px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: 5px;
+}
+
+
